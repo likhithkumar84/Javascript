@@ -1,10 +1,7 @@
-* {
-  font-family: Arial;
-  background-color: lightgray;
-}
-
 body {
   font-size: 12px;
+  font-family: Arial;
+  background-color: lightgrey;
 }
 
 #heading_resume {
