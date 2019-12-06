@@ -6,3 +6,4 @@ function table() {
     b.innerHTML += a + "*" + i + "=" + c + "<br>";
   }
 }
+this is my number 7382937224
