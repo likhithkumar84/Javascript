@@ -24,7 +24,17 @@ tr.text_centre {
 tr.table_heading {
   font-size: 14px;
 }
-
+td {
+  border: 1px solid brown;
+  padding: 5px;
+}
+th {
+  border: 1px solid brown;
+  padding: 5px;
+}
+table {
+  border-collapse: collapse;
+}
 div#name_decl {
   font-size: 20px;
   text-align: right;
