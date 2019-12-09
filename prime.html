@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+  <p style="font-weight: bold;color: blue">Check wether the number is prime or not</p>
+    <script>
+      function pn() {
+        prime = prompt("enter value");
+        var primenum = true;
+        for (i = 2; i < prime; i++) {
+          if (prime % i == 0) {
+            primenum = false;
+            break;
+          }
+        }
+        if (primenum == true) {
+          document.getElementById("prim").innerHTML = prime + " is prime";
+        } else {
+          document.getElementById("prim").innerHTML = prime + " is not prime";
+        }
+      }
+    </script>
+    <button onclick="pn()">click here</button><br>
+    <div id="prim"></div>
+  </body>
+</html>
