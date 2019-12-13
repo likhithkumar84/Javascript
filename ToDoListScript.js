@@ -13,11 +13,9 @@ function insertdata() {
 }
 
 function remove(event) {
-  pushdata.splice(event.target.dataset.index, 1);
-  console.log(pushdata);
+  pushdata.splice(event.target.dataset.index, 1);;
     list.innerHTML = "";
     for (var i = 0; i < pushdata.length; i++) {
         list.innerHTML += pushdata[i] + "<button data-index = '"+ i +"' onclick='remove(event)' >✖</button>" + "<br>";
     }
-
 }
