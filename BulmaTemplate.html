@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+
+    <!--<link rel="stylesheet" href="debug.css"> -->
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-head">
+        <div class="container">
+          <h1 class="title is-size-1  has-text-centered">
+            ToDo List
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="columns is-centered">
+      <div class="column is-narrow has-background-primary">
+        <div class="box has-background-light">
+          <div class="field has-addons">
+            <div class="control">
+              <input
+                id="list"
+                class="input"
+                type="text"
+                placeholder="Input List"
+              />
+            </div>
+            <div class="control">
+              <button class="button is-info" onclick="insertdata()">
+                Add
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="box content is-medium has-text-primary has-text-weight-bold is-capitalized"
+            id="innerlist"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="ToDoListScript.js"></script>
+  </body>
+</html>
