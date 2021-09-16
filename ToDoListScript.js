@@ -11,10 +11,10 @@ function insertdata() {
 function showlist() {
   list.innerHTML = "";
   for (var i = 0; i < pushdata.length; i++) {
-    list.innerHTML +=  pushdata[i] +
-        "  <button class='delete is-medium' data-index = '" + i + "' onclick='remove(event)'> Delete </button> "
-    +"<br/>"
-    ;
+    list.innerHTML +=
+      pushdata[i] +
+      `<button class='delete is-medium' data-index = 'i' onclick='remove(event)'> Delete </button> 
+       <br/>`;
   }
 }
 function remove(event) {
